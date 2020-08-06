@@ -1,0 +1,45 @@
+#Program1_Student,Mark
+
+#Program:
+    
+a = int(input())
+name = []
+marks = []
+final=[]
+for _ in range(a):
+    name.append(input())
+    marks.append(float(input()))
+marks1= sorted(list(set(marks)))
+marks1 = marks1[1:]
+for i in range(len(marks)):
+    if marks[i]==marks1[0]:
+        final.append(name[i])
+final.sort()
+for j in final:
+    print(j) 
+
+"""
+Sample:
+
+Input:
+    5
+    Harry
+    37.21
+    Berry
+    37.21
+    Tina
+    37.2
+    Akriti
+    41
+    Harsh
+    39
+Output:
+    Berry
+    Harry
+
+Logic Explanation:
+    To print the name of the students scored second minimum score(marks).
+
+Program Explanation:
+    To get the inputs and to sort the scores and to find second minimum
+    score and then to find the names of the student with that score.
