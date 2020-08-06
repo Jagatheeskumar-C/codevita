@@ -1,0 +1,33 @@
+#Program:
+    
+from itertools import permutations
+string1,ss_len = input().split()
+A = sorted(list(string1))
+for i in permutations(A,int(ss_len)):
+    print("".join(i))
+
+"""
+Sample:
+Input:
+    HACK 2
+Output:
+    AC
+    AH
+    AK
+    CA
+    CH
+    CK
+    HA
+    HC
+    HK
+    KA
+    KC
+    KH
+
+Logic Explanation:
+    To find all the possible permutations of a given words with a given
+    length.
+Program Explanation:
+    By importing permutations from itertools it is easy to find all possible
+    permutations.
+"""
